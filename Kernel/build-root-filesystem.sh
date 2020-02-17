@@ -137,6 +137,7 @@ cp ../Applications/DisplayProperties/DisplayProperties mnt/bin/DisplayProperties
 cp ../Applications/Welcome/Welcome mnt/bin/Welcome
 cp ../Applications/Help/Help mnt/bin/Help
 cp ../Applications/Browser/Browser mnt/bin/Browser
+cp ../Applications/Elevator/Elevator mnt/bin/Elevator
 cp ../Demos/HelloWorld/HelloWorld mnt/bin/HelloWorld
 cp ../Demos/HelloWorld2/HelloWorld2 mnt/bin/HelloWorld2
 cp ../Demos/WidgetGallery/WidgetGallery mnt/bin/WidgetGallery
@@ -162,6 +163,8 @@ cp ../MenuApplets/Audio/Audio.MenuApplet mnt/bin/
 cp ../MenuApplets/CPUGraph/CPUGraph.MenuApplet mnt/bin/
 cp ../MenuApplets/Clock/Clock.MenuApplet mnt/bin/
 cp ../MenuApplets/UserName/UserName.MenuApplet mnt/bin
+chown 0:$wheel_gid mnt/bin/Elevator
+chmod 4755 mnt/bin/Elevator
 echo "done"
 
 printf "installing dynamic libraries... "
